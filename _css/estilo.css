@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+body {
+	font-family: "Arial", sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+div#interface {
+	width: 900px;
+	background-color: #ffffff;
+	margin: 5px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+p {	
+	text-align: justify;
+	text-indent: 20px;
+
+}
+
+a {
+	text-decoration: none;
+	color: #606060
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 900px;
+	top: 70px;
+}
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background: url("../_imagens/glass-logo-peq.jpg");
+	background-repeat: no-repeat;
+	background-position: 0px 100px;
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 2px 2px 2px rgba(0,0,0,1);
+	padding: 0px
+	margin-bottom: 5px;
+}
+
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: -25px;
+}
+
+/* Formatação de imagens com lengenda! */
+
+figure.foto-legenda {
+	position: relative;
+	border:  8px solid white;
+	box-shadow: 1px 1px 4px black; 
+	border-radius: 10px;
+}
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px
+}
+
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.2);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+/*Formatação do Menu*/
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul{
+	text-transform: uppercase;
+	list-style: none;
+	position: absolute;
+	top: -5px;
+	left: 495px;
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #DDDDDD;
+	padding: 8px;
+	margin: 1px;
+	transition: background-color 1s;
+	border-radius: 5px
+
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#meu h1{
+	display: none;
+}
+
+nav#menu a{
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+section#corpo {
+	display: block;
+	width: 440px;
+	float: left;
+	padding-right: 15px;
+	border-right: 1px solid black;
+	
+}
+
+article#noticia-principal h2 {
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 0px;
+	margin: 10px 0px 10px 0px;
+	border-radius: 5px;
+}
+
+header#cabecalho-do-artigo h1 {
+	font-family: "FonteLogo", "sans-serif"
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 10px;
+}
+
+header#cabecalho-do-artigo h2 {
+	font-size: 15pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+.direita {
+	text-align: right;
+}
+
+header#cabecalho-do-artigo h3 {
+	font-size: 10pt;
+	color: #606060
+
+}
+
+table#tabelaspec td{
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+table#tabelaspec {
+	border: 1px solid black;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaspec td.ce {
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+}
+
+
+table#tabelaspec td.cd {
+	background-color: #cecece;
+
+}
+
+table#tabelaspec caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+table#tabelaspec caption span{
+	display: block;
+	float: right;
+	color: black;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+aside#lateral {
+	border-radius: 5px;
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	padding: 30px;
+	margin-top: 15px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0,.3)
+}
+
+aside#lateral h1 {
+	font-family: "FonteLogo", sans-serif;
+	font-size: 20pt;
+	color: #606066;
+	margin-top: 0px;
+}
+
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px; 
+	border-radius: 5px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid black;
+}
+
+footer#rodape p {
+	text-align: center;
+}
+
+video#video-lateral {
+	width: 350px;
+	border-radius: 5px;
+}
+
+video#video1 {
+	width: 450px;
+	height: 256px;
+	border-radius: 10px;
+}
